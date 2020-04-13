@@ -9,16 +9,28 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>CampAcklen Survey Form</title>
-    <meta name="description" content="" />
+    <meta
+      name="Survey form to all Ackleners to get feedback of CampAcklen"
+      content=""
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./styles/styles.css" />
   </head>
-  <body translate="no">
+  <body>
     <div class="container">
+      <img
+        class="aalogo"
+        src="https://acklenavenue.com/img/aa-logo.svg"
+        alt="Acklen Avenue Logo"
+      />
       <header class="header">
-        <h1 id="title" class="text-center">freeCodeCamp Survey Form</h1>
+        <h1 id="title" class="text-center">CampAcklen Survey Form</h1>
         <p id="description" class="description text-center">
-          Thank you for taking the time to help us improve the platform
+          Thank you for taking the time to help us improve!
         </p>
       </header>
       <form id="survey-form">
@@ -64,151 +76,114 @@
             <option disabled="" selected="" value=""
               >Select current role</option
             >
-            <option value="student">Student</option>
-            <option value="job">Full Time Job</option>
-            <option value="learner">Full Time Learner</option>
-            <option value="preferNo">Prefer not to say</option>
-            <option value="other">Other</option>
+            <option value="leadershipOps">Leadership & Operations</option>
+            <option value="EM">Engagement Managers</option>
+            <option value="BA">Business Analyst</option>
+            <option value="SM">Scrum Masters</option>
+            <option value="POps">People Operations</option>
+            <option value="Devs">Developers</option>
+            <option value="Arq">Arquitects</option>
+            <option value="Ops">Operations</option>
+            <option value="Design">Designers</option>
+            <option value="QA">Quality Assurance</option>
           </select>
         </div>
         <div class="form-group">
-          <p>Would you recommend freeCodeCamp to a friend?</p>
-          <label>
+          <p>What was you favorite feature of our last CampAcklen?</p>
+          <label class="fav-radio">
             <input
-              name="user-recommend"
-              value="definitely"
+              name="user-fav"
+              value="PC-coWorkers"
               type="radio"
               class="input-radio"
-              checked=""
-            />Definitely</label
+            />Personal Connections with Co-Workers</label
           >
-          <label>
+          <label class="fav-radio">
             <input
-              name="user-recommend"
-              value="maybe"
+              name="user-fav"
+              value="PC-leadership"
               type="radio"
               class="input-radio"
-            />Maybe</label
+            />Personal Connections with Leadership</label
           >
-          <label
+          <label class="fav-radio"
             ><input
-              name="user-recommend"
-              value="not-sure"
+              name="user-fav"
+              value="teamBuilding"
               type="radio"
               class="input-radio"
-            />Not sure</label
+            />Team Building Activities</label
           >
-        </div>
-        <div class="form-group">
-          <p>
-            What is your favorite feature of freeCodeCamp?
-          </p>
-          <select
-            id="most-like"
-            name="mostLike"
-            class="form-control"
-            required=""
+          <label class="fav-radio"
+            ><input
+              name="user-fav"
+              value="sessions"
+              type="radio"
+              class="input-radio"
+            />Guild Sessions/Talks</label
           >
-            <option disabled="" selected="" value="">Select an option</option>
-            <option value="challenges">Challenges</option>
-            <option value="projects">Projects</option>
-            <option value="community">Community</option>
-            <option value="openSource">Open Source</option>
-          </select>
+          <label class="fav-radio"
+            ><input
+              name="user-fav"
+              value="barcamp"
+              type="radio"
+              class="input-radio"
+            />Barcamp</label
+          >
         </div>
         <div class="form-group">
           <p>
             What would you like to see improved?
             <span class="clue">(Check all that apply)</span>
           </p>
-          <label
+          <label class="fav-radio"
             ><input
               name="prefer"
-              value="front-end-projects"
+              value="meeting-facilities"
               type="checkbox"
               class="input-checkbox"
-            />Front-end Projects</label
+            />Meeting Facilities</label
           >
-          <label>
+          <label class="fav-radio">
             <input
               name="prefer"
-              value="back-end-projects"
+              value="sleeping-facilities"
               type="checkbox"
               class="input-checkbox"
-            />Back-end Projects</label
-          >
-          <label
+            />Sleeping Facilities
+          </label>
+          <label class="fav-radio"
             ><input
               name="prefer"
-              value="data-visualization"
+              value="bathrooms"
               type="checkbox"
               class="input-checkbox"
-            />Data Visualization</label
+            />Bathrooms</label
           >
-          <label
+          <label class="fav-radio"
             ><input
               name="prefer"
-              value="challenges"
+              value="meals"
               type="checkbox"
               class="input-checkbox"
-            />Challenges</label
+            />Meals</label
           >
-          <label
+          <label class="fav-radio"
             ><input
               name="prefer"
-              value="open-source-community"
+              value="snacks-coffee"
               type="checkbox"
               class="input-checkbox"
-            />Open Source Community</label
-          >
-          <label
+            />Snacks/Coffee
+          </label>
+          <label class="fav-radio"
             ><input
               name="prefer"
-              value="gitter-help-rooms"
+              value="internet"
               type="checkbox"
               class="input-checkbox"
-            />Gitter help rooms</label
-          >
-          <label
-            ><input
-              name="prefer"
-              value="videos"
-              type="checkbox"
-              class="input-checkbox"
-            />Videos</label
-          >
-          <label
-            ><input
-              name="prefer"
-              value="city-meetups"
-              type="checkbox"
-              class="input-checkbox"
-            />City Meetups</label
-          >
-          <label
-            ><input
-              name="prefer"
-              value="wiki"
-              type="checkbox"
-              class="input-checkbox"
-            />Wiki</label
-          >
-          <label
-            ><input
-              name="prefer"
-              value="forum"
-              type="checkbox"
-              class="input-checkbox"
-            />Forum</label
-          >
-          <label
-            ><input
-              name="prefer"
-              value="additional-courses"
-              type="checkbox"
-              class="input-checkbox"
-            />Additional Courses</label
-          >
+            />Internet (Camp Acklen Wifi)
+          </label>
         </div>
         <div class="form-group">
           <p>Any comments or suggestions?</p>
@@ -226,17 +201,5 @@
         </div>
       </form>
     </div>
-    <script src="https://static.codepen.io/assets/common/stopExecutionOnTimeout-157cd5b220a5c80d4ff8e0e70ac069bffd87a61252088146915e8726e5d9f147.js"></script>
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-    <div
-      id="fcc_test_suite_wrapper"
-      style="position: relative !important; z-index: 99999 !important;"
-    ></div>
-    <script id="rendered-js">
-      // coded by @lasjorg
-      // eslint-disable-next-line no-unused-vars
-      const projectName = 'survey-form';
-      //# sourceURL=pen.js
-    </script>
   </body>
 </html>

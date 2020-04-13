@@ -12,7 +12,7 @@
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.4;
@@ -20,7 +20,6 @@ body {
   margin: 0;
 }
 
-/* mobile friendly alternative to using background-attachment: fixed */
 body::before {
   content: '';
   position: fixed;
@@ -35,7 +34,7 @@ body::before {
       rgba(58, 58, 158, 0.8),
       rgba(136, 136, 206, 0.7)
     ),
-    url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+    url(https://lh3.googleusercontent.com/NCKfj7zcxiW0dMYXL2IT7DRxeIxM2uLfTLveU85OoHsT2XB7s5OU0hCIR83D9j7y-9KDpifiROSiiLiac1kGml6K5dsJbIArq3D2x4x-4kgTMzSe_xHyE7iVjYt1fH_ITaBrzxsyElYsJBA3uFkRCm3NBevDf8nwuqD3XX04N2LgqjV46L1BG-6zb7-FS5jP3pYn4Vu9dWBNpuwNrJHCuTJNDuO26AQ7R5Su0KnamemJs9D7mlKwf7hT9Y8D6XJyXBbH1MSQuBufeVCEbuKbn4N9yKaHpvkbZLFrOoKjXqgd7I7ouq28rJqo4zDDhpkXwXTvfW9a7XhFZIyEwOxPyLnewOy-Z2OESJOY3DedHsnfCFD5iBMrukGQ2VHh1mRdjP4SdjFelmPQwzdBchc5vg5mRZGdUQbuSqWkThCyTaejRGHBoAiG1RRBEEbOJWeMmG0y_wrIlnOLVzmhCGqVrHux7vlTdPRISDCuWHN9KmDBfVyh3GAytZ-LO2L3YBeJPQ3YjNLLQzk2jkO4TdY9pXGVAMLckA4omuc_uGVmLiUEd4sbACq7bziOWgu0rckFHoEJAlt-B7DZ1LBGSr-3uSWM54pBdp6SThw5HeoDkblaNL7p9mH2sDFBeEGmsG0x2Lq5IMUZOqzTsNWG0YVf1ZJM-2ar8CQpVFpqu2ZGAReAggqlyAUwgTa8yrxYKei8MtHhQOrXslNCP7zYXWD7MJrl9Pq4isHwWwFqZLR9qtnyKhfVza-JGiI=w2842-h1894-no);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -115,6 +114,13 @@ button {
   text-align: center;
 }
 
+.aalogo {
+  margin: auto;
+  display: block;
+  width: 500px;
+  padding: 20px;
+}
+
 /* form */
 
 form {
@@ -151,6 +157,13 @@ form {
   border-color: #80bdff;
   outline: 0;
   box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.fav-radio {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  margin-bottom: 0.5rem;
 }
 
 .input-radio,
